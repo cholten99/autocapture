@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <title>Government digital capabilities</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- Canvasjs -->
+    <script type="text/javascript" src="canvasjs/canvasjs.min.js"></script>
+
+    <!-- Autocapture -->
+    <script type="text/javascript" src="autocapture.js"></script>
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <script type="text/javascript" src="FileSaver.js/FileSaver.js"></script>
+    <script src="toblob/js/canvas-to-blob.min.js"></script>
+
+    <script>
+    
+		$(function() {
+			var chart = new CanvasJS.Chart("chartContainer",
+			{
+			  title:{
+			  text: ""
+			  },
+		      legend: {
+				   horizontalAlign: "center", // "center" , "right"
+				   verticalAlign: "top",  // "top" , "bottom"
+				   fontSize: 15
+		  	  },
+			   data: [
+				{        
+					type: "spline",
+					showInLegend: true,
+					name: "DEFRA",
+					legendText: "DEFRA",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 1 },
+						{ x: new Date(2014, 01, 1), y: 1.5 },
+						{ x: new Date(2014, 02, 1), y: 2 },
+						{ x: new Date(2014, 03, 1), y: 2.7 },
+					]
+				  },
+					{        
+					type: "spline",
+					showInLegend: true,
+					name: "HMO",
+					legendText: "HMO",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 2 },
+						{ x: new Date(2014, 01, 1), y: 2.25 },
+						{ x: new Date(2014, 02, 1), y: 1.75 },
+						{ x: new Date(2014, 03, 1), y: 2 },
+					]
+				  },
+				  				{        
+					type: "spline",
+					showInLegend: true,
+					name: "HMRC",
+					legendText: "HMRC",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 1 },
+						{ x: new Date(2014, 01, 1), y: 1.5 },
+						{ x: new Date(2014, 02, 1), y: 2 },
+						{ x: new Date(2014, 03, 1), y: 4 },
+					]
+				  },
+				  				{        
+					type: "spline",
+					showInLegend: true,
+					name: "MOD",
+					legendText: "MOD",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 0.3 },
+						{ x: new Date(2014, 01, 1), y: 1 },
+						{ x: new Date(2014, 02, 1), y: 1.2 },
+						{ x: new Date(2014, 03, 1), y: 0.7 },
+					]
+				  }
+		
+			  ]
+			});
+
+			chart.render();
+		});
+    
+    </script>
+
+  </head>
+  <body>
+  
+  <div class="container">
+  
+	  <div class="page-header">
+		<h2>Government digital capabilities</h2>
+	  </div>
+  
+	  <div><h3>Purpose</h3>Introduction to digital capabilities work... Who's doing it, who for, who to contact, etc...</h3></div>
+
+      <div><h3>Overall departmental status</h3></div>
+  
+	  <div id="chart"><div id="chartContainer" style="height: 300px; width: 100%;"></canvas></div>
+  
+       <div><h3>Weighting</h3></div>
+       
+       When calculating the overall digital capability score for a department the different areas of review are given the following weightings.<p/>
+       
+        <table class="table">
+        <thead>
+          <tr>
+            <th>Policy</th>
+            <th>Social Media</th>
+            <th>Consultations</th>
+            <th>GDS Exemplars</th>
+            <th>Digital Delivery</th>
+            <th>IT Modernisation</th>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1.5</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+       
+       <div><h3>Breakdown</h3></div>
+       
+       Click on a department or capability area for further information.<p/>
+       Dates in brackets indicate latest update for that data. Background colour of department indicates overall RAG status.
+              
+       <table class="table">
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th><a href="policy.html">Policy</a></th>
+            <th>Social Media</th>
+            <th>Consultations</th>
+            <th>GDS Exemplars</th>
+            <th>Digital Delivery</th>
+            <th>IT Modernisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="success"><a href="defra.html">DEFRA</a></td>
+            <td class="danger">1 (16/02/14)</td>
+            <td class="warning">2 (10/02/14)</td>
+            <td class="success"><div style="border-style:solid; border-color:red;">3 (01/02/14)</div></td>
+            <td class="success">4 (30/02/14)</td>
+            <td class="warning">2 (07/03/14)</td>
+            <td class="success">4 (09/01/14)</td>
+          </tr>
+          <tr>
+            <td class="warning">HMO</td>
+            <td class="danger">0 (01/02/14)</td>
+            <td class="danger">1 (19/01/14)</td>
+            <td class="warning">2 (04/02/14)</td>
+            <td class="danger">1 (16/02/14)</td>
+            <td class="danger">1 (02/03/14)</td>
+            <td class="warning">2 (16/01/14)</td>
+          </tr>
+          <tr>
+            <td class="warning">HMRC</td>
+            <td class="success"><div style="border-style:solid; border-color:red;">3 (05/01/14)</div></td>
+            <td class="success">3 (09/03/14)</td>
+            <td class="warning">2 (16/03/14)</td>
+            <td class="danger">1 (19/01/14)</td>
+            <td class="success">3 (07/03/14)</td>
+            <td class="success"><div style="border-style:solid; border-color:red;">4 (09/01/14)</div></td>
+          </tr>
+          <tr>
+            <td class="danger">MOD</td>
+            <td class="danger">0 (14/02/14)</td>
+            <td class="danger">0 (17/02/14)</td>
+            <td class="danger">1 (12/02/14)</td>
+            <td class="danger">0 (16/03/14)</td>
+            <td class="danger">1 (05/02/14)</td>
+            <td class="warning"><div style="border-style:solid; border-color:red;">2 (07/01/14)</div></td>
+          </tr>
+
+        </tbody>
+      </table>
+  
+  </div>
+  
+  </body>
+</html>
+  

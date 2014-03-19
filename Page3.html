@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <!-- Autocapture -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="autocapture.js"></script>
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <script type="text/javascript" src="FileSaver.js/FileSaver.js"></script>
+    <script src="toblob/js/canvas-to-blob.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id='HelpRequest'><button type='button' onclick='SetUpSession("NewCall")'>Request Help</button></div><p/>
+
+    <div id="Header"><img src="http://bowsy.me.uk/PageClone/INeedHelp/Header.png"></div><p>
+
+    <div id="Area">Registering for a for Tax Disc Registration : Page 3</div><p>
+
+    <div id="ExampleForm1">Please enter your document details:</div><p>
+
+    <form id='aForm' name='aForm' action='javascript:void(0);' method='get'>
+      Driving License Number:<br> 
+      <input type='text' id='licenseNumber' name='licenseNumber'><p>
+      Insurance Number:<br> 
+      <input type='text' id='insuranceNumber' name='insuranceNumber'><p>
+    </form><p>
+
+    <form id='bForm' name='bForm' action='Page4.html' method='get'>
+      MOT valid for how many months?:<br>
+      <select id='MOT' name='MOT'>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select><p>
+
+      SORN Off-Road:<br>
+      <input type="radio" name="sorn" id="sornYesRadio" value="yes">Yes<br>
+      <input type="radio" name="sorn" id="sornNoRadio" value="no">No
+      <p>
+    
+      <input type="submit" value="Finish"><p>
+
+    </form><p>
+
+  </body>
+</html>
