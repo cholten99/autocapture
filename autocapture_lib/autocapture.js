@@ -12,7 +12,6 @@ $(function() {
   });
 });
 
-// Cookie code more-or-less cribbed from : http://www.w3schools.com/js/js_cookies.asp
 function SetCookie(cookieName, value, days) {
   var expireDate = new Date();
   expireDate.setDate(expireDate.getDate() + days);
