@@ -14,11 +14,6 @@ Usage
 -------
 As you move from page to page screendumps (including entered data) will be saved to your local machine as PNG files. The files for a particular user journey will all be named with the same server and start-time and differ in the last digit (increased as the used steps through the site).
 
-Examples
--------
-
-A live example can be found at : http://autocapture.gopagoda.com/
-
 Setup
 -------
 

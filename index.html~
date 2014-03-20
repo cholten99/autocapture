@@ -22,7 +22,10 @@
      <ul>
        <li><a href="example1/index.html">Example 1</a> : Click on the DEFRA link</li>
        <li><a href="example2/index.html">Example 2</a> : Click on the Next / Finish buttons</li>
-     </ul><p/>  
+     </ul><p/>
+
+     <script src="http://gist-it.appspot.com/github/cholten99/gist-it-example/blob/master/example.js"></script>
+  
 
     </div>
 
