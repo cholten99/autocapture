@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <title>DEFRA</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- Canvasjs -->
+    <script type="text/javascript" src="canvasjs/canvasjs.min.js"></script>
+
+    <!-- Autocapture -->
+    <script type="text/javascript" src="../autocapture_lib/autocapture.js"></script>    
+    <script type="text/javascript" src="../autocapture_lib/FileSaver.js"></script>
+    <script type="text/javascript" src="../autocapture_lib/html2canvas.js"></script>
+    <script type="text/javascript" src="../autocapture_lib/canvas-to-blob.min.js"></script>
+
+    <script>
+    
+		$(function() {
+			var chart = new CanvasJS.Chart("chartContainer",
+			{
+			  title:{
+			  text: ""
+			  },
+		      legend: {
+				   horizontalAlign: "center", // "center" , "right"
+				   verticalAlign: "top",  // "top" , "bottom"
+				   fontSize: 15
+		  	  },
+			   data: [
+				{        
+					type: "spline",
+					showInLegend: true,
+					name: "DEFRA Average",
+					legendText: "DEFRA Average",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 1 },
+						{ x: new Date(2014, 01, 1), y: 1.5 },
+						{ x: new Date(2014, 02, 1), y: 2 },
+						{ x: new Date(2014, 03, 1), y: 2.7 },
+					]
+				  },
+					{        
+					type: "spline",
+					showInLegend: true,
+					name: "Environment Agency",
+					legendText: "Environment Agency",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 2 },
+						{ x: new Date(2014, 01, 1), y: 2.25 },
+						{ x: new Date(2014, 02, 1), y: 1.75 },
+						{ x: new Date(2014, 03, 1), y: 2 },
+					]
+				  },
+				  				{        
+					type: "spline",
+					showInLegend: true,
+					name: "Rural Payments Agency",
+					legendText: "Rural Payments Agency",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 1 },
+						{ x: new Date(2014, 01, 1), y: 1.5 },
+						{ x: new Date(2014, 02, 1), y: 2 },
+						{ x: new Date(2014, 03, 1), y: 4 },
+					]
+				  },
+				  				{        
+					type: "spline",
+					showInLegend: true,
+					name: "AHVLA",
+					legendText: "AHVLA",
+					axisX: {
+						valueFormatString: "MMM",
+						interval: 1,
+						intervalType: "month"
+					},
+					axisY:{
+					   minimum: 5
+					},
+					dataPoints: [
+						{ x: new Date(2014, 00, 1), y: 0.3 },
+						{ x: new Date(2014, 01, 1), y: 1 },
+						{ x: new Date(2014, 02, 1), y: 1.2 },
+						{ x: new Date(2014, 03, 1), y: 0.7 },
+					]
+				  }
+		
+			  ]
+			});
+
+			chart.render();
+		});
+    
+    </script>
+
+  </head>
+  <body>
+  
+  <div class="container">
+  
+	  <div class="page-header">
+		<h2>DEFRA</h2>
+	  </div>
+  
+	  <div><h3>Update</h3>Latest update on improving digital capabilities at a DEFRA level, links to blog, who to contact, etc</h3></div>
+
+      <div><h3>Overall departmental status</h3></div>
+  
+	  <div id="chart"><div id="chartContainer" style="height: 300px; width: 100%;"></canvas></div>
+  
+       <div><h3>Weighting</h3></div>
+       
+       When calculating the overall digital capability score for a department the different areas of review are given the following weightings.<p/>
+       
+       <div><h3>Breakdown</h3></div>
+       
+       Click on a organisation or capability area for further information.<p/>
+       Dates in brackets indicate latest update for that data. Background colour of department indicates overall RAG status.
+              
+       <table class="table">
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th>Policy</th>
+            <th>Social Media</th>
+            <th>Consultations</th>
+            <th>GDS Exemplars</th>
+            <th>Digital Delivery</th>
+            <th>IT Modernisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="success">DEFRA Average</td>
+            <td class="danger">1 (16/02/14)</td>
+            <td class="warning">2 (10/02/14)</td>
+            <td class="success">3 (01/02/14)</td>
+            <td class="success">4 (30/02/14)</td>
+            <td class="warning">2 (07/03/14)</td>
+            <td class="success">4 (09/01/14)</td>
+          </tr>
+          <tr>
+            <td class="warning"><a href="defra_ea.html">Environment Agency</a></td>
+            <td class="danger">0 (01/02/14)</td>
+            <td class="danger">1 (19/01/14)</td>
+            <td class="warning">2 (04/02/14)</td>
+            <td class="danger">1 (16/02/14)</td>
+            <td class="danger">1 (02/03/14)</td>
+            <td class="warning">2 (16/01/14)</td>
+          </tr>
+          <tr>
+            <td class="warning">Rural Payments Agency</td>
+            <td class="success">3 (05/01/14)</td>
+            <td class="success">3 (09/03/14)</td>
+            <td class="warning">2 (16/03/14)</td>
+            <td class="danger">1 (19/01/14)</td>
+            <td class="success">3 (07/03/14)</td>
+            <td class="success">4 (09/01/14)</td>
+          </tr>
+          <tr>
+            <td class="danger">AHVLA</td>
+            <td class="danger">0 (14/02/14)</td>
+            <td class="danger">0 (17/02/14)</td>
+            <td class="danger">1 (12/02/14)</td>
+            <td class="danger">0 (16/03/14)</td>
+            <td class="danger">1 (05/02/14)</td>
+            <td class="warning">2 (07/01/14)</td>
+          </tr>
+
+        </tbody>
+      </table>
+  
+  </div>  
+  </div>
+  
+  </body>
+</html>
+  

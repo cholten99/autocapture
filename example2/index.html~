@@ -1,0 +1,62 @@
+<html>
+  <head>    
+    <!-- Autocapture -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../autocapture.js"></script>
+    <script type="text/javascript" src="../autocapture_libs/html2canvas.js"></script>
+    <script type="text/javascript" src="../autocapture_libs/FileSaver.js/FileSaver.js"></script>
+    <script type="text/javascript" src="../autocapture_libs/toblob/js/canvas-to-blob.min.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div id="Header"><img src="http://bowsy.me.uk/PageClone/INeedHelp/Header.png"></div><p>
+
+    <div id="Area">Registering for a for Tax Disc Registration</div><p>
+
+    <div id="ExampleForm1">Please enter your personal details:</div><p>
+
+    <form id='aForm' name='aForm' action='javascript:void(0);' method='get'>
+      Name:<br> 
+      <input type='text' id='fullname' name='fullname'><p>
+      Address:<br>
+      <textarea name='address' id='address' rows='4' cols='50' text-align='top'></textarea>
+    </form><p>
+
+    <form id='bForm' name='bForm' action='Page2.html' method='get'>
+      Nationality:<br>
+      <select id="nationality" name='nationality'>
+        <option value="English">English</option>
+        <option value="Scottish">Scottish</option>
+        <option value="Irish">Irish</option>
+        <option value="Welsh">Welsh</option>
+      </select><p>
+
+      Gender:<br>
+      <input type="radio" name="sex" id="sexMaleRadio" value="male">Male<br>
+      <input type="radio" name="sex" id="sexFemaleRadio" value="female">Female
+      <p>
+    
+      <input type="submit" value="Next"><p>
+
+    </form><p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam faucibus dapibus. Praesent feugiat sed sapien ut feugiat. Sed sodales fermentum tortor eget porta. In nec risus adipiscing ligula ornare tempor at sed dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium risus ut nunc placerat, vel facilisis lacus mattis. Vestibulum fermentum at lectus sed pretium. Etiam interdum nisl at diam dictum aliquet. Praesent gravida, libero sit amet adipiscing lacinia, arcu lorem ornare lorem, id malesuada sem elit sed felis. Nunc arcu nibh, dictum quis justo ut, lobortis sodales tellus. Praesent euismod mauris sed lorem fermentum blandit. Ut nec tortor sed eros posuere mattis. Pellentesque nec tempus mauris. Duis id ultrices metus, nec dictum libero.
+<p>
+Nunc eget odio pulvinar, vehicula mauris in, posuere magna. Sed fermentum erat sed ante varius aliquam. Proin eget lacinia ligula. Fusce elementum non sapien ut elementum. Morbi placerat diam et sagittis facilisis. Quisque quis augue eu eros tincidunt luctus eget eu massa. Aliquam placerat leo enim, vitae lacinia magna auctor vitae. Fusce aliquam ac erat ut lacinia. Aliquam erat volutpat. Aliquam erat volutpat. Integer vehicula tellus quis varius interdum. Integer sit amet sodales dolor. Proin ante mauris, porta vel consequat sed, sodales sit amet nisi. Quisque nec justo sed elit facilisis convallis vel vel ipsum.
+<p>
+Ut laoreet lobortis neque sed porta. Integer dignissim fringilla augue vitae tincidunt. Morbi accumsan vitae tellus vel sollicitudin. Suspendisse eu purus tortor. Maecenas eu congue purus. Nam gravida mi lectus, ut egestas orci interdum placerat. Duis pulvinar tellus nunc, sit amet sagittis diam consectetur viverra. Mauris non diam lacus. In et augue ullamcorper ipsum pretium lacinia. Vestibulum tincidunt, nisi in hendrerit vehicula, erat purus venenatis libero, at porttitor massa nisl a lorem. Sed vitae porttitor neque. Quisque convallis metus eget mattis sodales. Proin bibendum neque lacus, nec auctor libero vulputate sit amet. Phasellus urna urna, lobortis sit amet odio in, dictum ultrices lectus. Praesent faucibus et erat in luctus.
+<p>
+Donec mauris lacus, euismod lobortis leo et, ornare euismod arcu. Pellentesque quis lectus non risus dapibus vulputate. Donec orci turpis, vestibulum id volutpat quis, lacinia nec ligula. Morbi vulputate nisi eget semper dapibus. In eget massa quis mi dapibus venenatis ac ac mi. Vestibulum consequat, eros eget dictum ultricies, metus nunc fermentum tellus, sit amet dictum augue lacus et ligula. Aliquam tempor tristique orci, id posuere quam dignissim ac. Curabitur eu neque dapibus, iaculis orci vel, laoreet nisl. Vestibulum odio dolor, placerat sed egestas in, dictum ac felis. Vestibulum porttitor sed nulla in rutrum. Aliquam erat volutpat.
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam faucibus dapibus. Praesent feugiat sed sapien ut feugiat. Sed sodales fermentum tortor eget porta. In nec risus adipiscing ligula ornare tempor at sed dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium risus ut nunc placerat, vel facilisis lacus mattis. Vestibulum fermentum at lectus sed pretium. Etiam interdum nisl at diam dictum aliquet. Praesent gravida, libero sit amet adipiscing lacinia, arcu lorem ornare lorem, id malesuada sem elit sed felis. Nunc arcu nibh, dictum quis justo ut, lobortis sodales tellus. Praesent euismod mauris sed lorem fermentum blandit. Ut nec tortor sed eros posuere mattis. Pellentesque nec tempus mauris. Duis id ultrices metus, nec dictum libero.
+<p>
+Nunc eget odio pulvinar, vehicula mauris in, posuere magna. Sed fermentum erat sed ante varius aliquam. Proin eget lacinia ligula. Fusce elementum non sapien ut elementum. Morbi placerat diam et sagittis facilisis. Quisque quis augue eu eros tincidunt luctus eget eu massa. Aliquam placerat leo enim, vitae lacinia magna auctor vitae. Fusce aliquam ac erat ut lacinia. Aliquam erat volutpat. Aliquam erat volutpat. Integer vehicula tellus quis varius interdum. Integer sit amet sodales dolor. Proin ante mauris, porta vel consequat sed, sodales sit amet nisi. Quisque nec justo sed elit facilisis convallis vel vel ipsum.
+<p>
+Ut laoreet lobortis neque sed porta. Integer dignissim fringilla augue vitae tincidunt. Morbi accumsan vitae tellus vel sollicitudin. Suspendisse eu purus tortor. Maecenas eu congue purus. Nam gravida mi lectus, ut egestas orci interdum placerat. Duis pulvinar tellus nunc, sit amet sagittis diam consectetur viverra. Mauris non diam lacus. In et augue ullamcorper ipsum pretium lacinia. Vestibulum tincidunt, nisi in hendrerit vehicula, erat purus venenatis libero, at porttitor massa nisl a lorem. Sed vitae porttitor neque. Quisque convallis metus eget mattis sodales. Proin bibendum neque lacus, nec auctor libero vulputate sit amet. Phasellus urna urna, lobortis sit amet odio in, dictum ultrices lectus. Praesent faucibus et erat in luctus.
+<p>
+Donec mauris lacus, euismod lobortis leo et, ornare euismod arcu. Pellentesque quis lectus non risus dapibus vulputate. Donec orci turpis, vestibulum id volutpat quis, lacinia nec ligula. Morbi vulputate nisi eget semper dapibus. In eget massa quis mi dapibus venenatis ac ac mi. Vestibulum consequat, eros eget dictum ultricies, metus nunc fermentum tellus, sit amet dictum augue lacus et ligula. Aliquam tempor tristique orci, id posuere quam dignissim ac. Curabitur eu neque dapibus, iaculis orci vel, laoreet nisl. Vestibulum odio dolor, placerat sed egestas in, dictum ac felis. Vestibulum porttitor sed nulla in rutrum. Aliquam erat volutpat.
+
+  </body>
+</html>

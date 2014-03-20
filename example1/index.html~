@@ -14,10 +14,10 @@
     <script type="text/javascript" src="canvasjs/canvasjs.min.js"></script>
 
     <!-- Autocapture -->
-    <script type="text/javascript" src="autocapture.js"></script>
-    <script type="text/javascript" src="html2canvas.js"></script>
-    <script type="text/javascript" src="FileSaver.js/FileSaver.js"></script>
-    <script src="toblob/js/canvas-to-blob.min.js"></script>
+    <script type="text/javascript" src="../autocapture_lib/autocapture.js"></script>
+    <script type="text/javascript" src="../autocapture_lib/FileSave.js"></script>
+    <script type="text/javascript" src="../autocapture_lib/html2canvas.js"></script>
+    <script type="text/javascript" src="../autocapture_lib/canvas-to-blob.min.js"></script>
 
     <script>
     
