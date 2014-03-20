@@ -1,9 +1,4 @@
 
-// TBD
-// 4) Write up how it works in the README.rd (inc reload to get the last page)
-// 5) Push to github and host at pagoda
-// 6) Send to Transformation, AD, user research, etc
-
 // jQuery onload function
 $(function() {
   // Set up the event to capture screendumps on
